@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="generator" content="Hugo 0.90.1" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', '');
+    </script>
+
+
+    <title>Jeebak&#39;s Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <style>
+        .rad-fade-in {
+            will-change: opacity, transform;
+            animation-name: rad-fade-in-fallback;
+            animation-duration: 5s;
+            animation-fill-mode: both;
+        }
+
+        @keyframes rad-fade-in-fallback {
+            0% {
+                opacity: 0;
+            }
+            75% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .fonts-loaded .rad-fade-in.rad-waiting {
+            animation-name: none;
+            opacity: 0;
+        }
+
+        .fonts-loaded .rad-fade-in.rad-animate {
+            animation-name: rad-fade-in;
+            animation-duration: 1.1s;
+            animation-fill-mode: both;
+        }
+
+        @keyframes rad-fade-in {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .rad-fade-in-long {
+            will-change: opacity, transform;
+            animation-name: rad-fade-in-long-fallback;
+            animation-duration: 8s;
+            animation-fill-mode: both;
+        }
+
+        @keyframes rad-fade-in-long-fallback {
+            0% {
+                opacity: 0;
+            }
+            75% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .fonts-loaded .rad-fade-in-long.rad-waiting {
+            animation-name: none;
+            opacity: 0;
+        }
+
+        .fonts-loaded .rad-fade-in-long.rad-animate {
+            animation-name: rad-fade-in-long;
+            animation-duration: 2s;
+            animation-fill-mode: both;
+        }
+
+        @keyframes rad-fade-in-long {
+            0% {
+                opacity: 0;
+            }
+            20% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .rad-fade-down {
+            will-change: opacity, transform;
+            animation-name: rad-fade-down-fallback;
+            animation-duration: 5s;
+            animation-fill-mode: both;
+            transform: translateY(-30px);
+        }
+
+        @keyframes rad-fade-down-fallback {
+            0% {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            75% {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fonts-loaded .rad-fade-down.rad-waiting {
+            animation-name: none;
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        .fonts-loaded .rad-fade-down.rad-animate {
+            animation-name: rad-fade-down;
+            animation-duration: 1.1s;
+        }
+
+        @keyframes rad-fade-down {
+            0% {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .rad-scale-down {
+            will-change: opacity, transform;
+            animation-name: rad-scale-down-fallback;
+            animation-duration: 5s;
+            animation-fill-mode: both;
+            transform-origin: 50% 0;
+        }
+
+        @keyframes rad-scale-down-fallback {
+            0% {
+                opacity: 0;
+                transform: scaleY(0.95);
+            }
+            75% {
+                opacity: 0;
+                transform: scaleY(0.95);
+            }
+            100% {
+                opacity: 1;
+                transform: scaleY(1);
+            }
+        }
+
+        .fonts-loaded .rad-scale-down.rad-waiting {
+            animation-name: none;
+            opacity: 0;
+            transform: scaleY(0.95);
+        }
+
+        .fonts-loaded .rad-scale-down.rad-animate {
+            animation-name: rad-scale-down;
+            animation-duration: 1.1s;
+            animation-fill-mode: both;
+        }
+
+        @keyframes rad-scale-down {
+            0% {
+                opacity: 0;
+                transform: scaleY(0.95);
+            }
+            100% {
+                opacity: 1;
+                transform: scaleY(1);
+            }
+        }
+
+        .blog-post__image-container {
+            position: relative;
+        }
+
+        .blog-post__overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .blog-post:hover .blog-post__overlay {
+            opacity: 1;
+        }
+
+        .blog-post__action {
+            color: white;
+            margin: 5px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+
+        .blog-post__action:hover {
+            text-decoration: underline;
+        }
+
+        .icon {
+            margin-right: 5px;
+        }
+    </style>
+
+
+
+
+    <link rel="stylesheet" href="https://mattdancho.netlify.app/css/main.css" />
+
+    <link rel="stylesheet" href="https://mattdancho.netlify.app/css/rad-icons.css" />
+
+    <link rel="stylesheet" href="https://mattdancho.netlify.app/css/custom.css" />
+    
+
+
+
+
+
+</head>
+
+<body>
+
+    <header class="header fixed-top rad-animation-group" id="header">
+        <div class="container rad-fade-in">
+            <nav class="navbar navbar-expand-lg navbar-light p-0">
+                <a class="navbar-brand" href="https://jeebakz.github.io/port/">
+        <span>Jee</span>
+        <span>Bak</span>
+        
+      </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent, #header" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://jeebakz.github.io/port/#home">HOME</a>
+                        </li>
+
+         
+          
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+
+	
+	
+<section id="about-foo" class="rad-showcase rad-showcase--index rad-animation-group rad-fade-down">
+  <div class="rad-showcase__bg">
+    <img
+      class="lozad img-responsive"
+      src="Copy of Untitled Design.png"
+      data-src="Copy of Untitled Design.png"
+      data-srcset="Copy of Untitled Design.png 1x, Copy of Untitled Design.png 2x"
+      alt=""
+    />
+  </div>
+  <div class="container">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-8 col-lg-7 col-xl-6">
+            
+          <h1 class="display-1">
+            
+           
+           
+            <br />
+            <h1>Match, Player, and Club Analysis Reports</h1>
+          </h1>
+<p class="lead">
+    Comprehensive football analysis covering matches, players, and clubs. Match Reports provide in-depth insights into team performance, tactical strategies, and key moments. Player Reports focus on individual assessments, evaluating technical skills, tactical impact, and development potential. Club Reports deliver holistic evaluations of team dynamics, performance trends, and squad depth, supporting strategic planning and recruitment. These reports offer data-driven insights to enhance decision-making for coaches, analysts, and clubs.
+</p>
+
+
+
+        </div>
+        <div class="rad-showcase__bg rad-showcase__bg--mobile">
+            <img class="lozad img-responsive" src="data:Copy of Untitled Design/png;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs=" data-src="Copy of Untitled Design.png" alt="" />
+        </div>
+        </section>
+
+
+
+
+                        
+        <div class="container">
+            <h2>Match Reports</h2>
+           
+            <p class="lead">
+                Detailed analyses of football matches that provide insights into team performance, tactical approaches, key moments, and statistical breakdowns. These reports highlight strengths, weaknesses, and areas for improvement, aiding coaches, analysts, and teams in refining strategies.
+            </p>
+            <p style="font-family: 'Courier New', Courier, monospace;">
+                [For analyzing team performance, tactical approaches, key moments, and statistical breakdowns, I scraped data from websites using Python, specifically focusing on Opta as the primary data source. This data includes key metrics such as passing networks, passing maps, defensive actions, expected goals (xG) over-flow, player performance metrics, and other advanced statistics. After scraping, I utilized Python libraries such as Pandas for data manipulation and visualization libraries like Matplotlib and Mplsoccer to create meaningful visualizations that break down team performance, tactics, and match key moments effectively.]
+            </p>
+            
+            <h4>⚽Example 1 (ISL Match- MBSG vs EBFC)</h4>
+            <p>
+                Here is an example of a detailed match report that showcases performance analysis, key tactical breakdowns, and statistical insights of an ISL Match Mohunbagan Super Giants vs East Bengal FC:
+            </p>
+            <ul>
+                <li><strong>Team Performance:</strong> A breakdown of overall team performance, including possession stats, passing accuracy, and defensive strategies.</li>
+                <li><strong>Tactical Approaches:</strong> A review of the tactics used by both teams, including formation analysis and strategic decisions.</li>
+                <li><strong>Key Moments:</strong> Highlighting significant moments in the match such as goals, assists, and key defensive plays.</li>
+                <li><strong>Statistical Breakdown:</strong> A detailed look at advanced statistics like expected goals (xG), player performance metrics, and other key figures.</li>
+            </ul>
+            
+           
+        
+            <h5>Match Report Presentation</h5>
+            <div id="matchReportCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="PPTs/ex1/sl1.png" class="d-block w-100" alt="Slide 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="PPTs/ex1/sl2.png" class="d-block w-100" alt="Slide 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="PPTs/ex1/sl3.png" class="d-block w-100" alt="Slide 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="PPTs/ex1/sl4.png" class="d-block w-100" alt="Slide 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="PPTs/ex1/sl5.png" class="d-block w-100" alt="Slide 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="PPTs/ex1/sl6.png" class="d-block w-100" alt="Slide 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="PPTs/ex1/sl7.png" class="d-block w-100" alt="Slide 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="PPTs/ex1/sl8.png" class="d-block w-100" alt="Slide 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="PPTs/ex1/sl9.png" class="d-block w-100" alt="Slide 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="PPTs/ex1/sl10.png" class="d-block w-100" alt="Slide 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="PPTs/ex1/sl11.png" class="d-block w-100" alt="Slide 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="PPTs/ex1/sl12.png" class="d-block w-100" alt="Slide 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="PPTs/ex1/sl13.png" class="d-block w-100" alt="Slide 3">
+                    </div>
+                    <!-- Add more slides as needed -->
+                </div>
+
+ <!-- Navigation buttons placed below the carousel -->
+ <div class="carousel-controls d-flex justify-content-between mt-3">
+    <button class="carousel-control-prev" type="button" data-bs-target="#matchReportCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#matchReportCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden"></span>
+    </button>
+</div>
+</div>
+<!-- Full Match Report Section - placed below carousel and navigation buttons -->
+<div class="mt-4">
+    <h5 class="text-left">Full Match Report</h5>
+    <div class="row">
+        <!-- Left side text and button -->
+        <div class="col-md-6">
+            <h6>Kolkata Derby 2025: How Mohun Bagan Edged past East Bengal</h6>
+            <span>The Calcutta Derby known as the “Boro Match” is one of the world’s most storied and emotional football matches. Played between Mohun Bagan Super Giant and East Bengal FC, this iconic clash represents more than just a game, it captures history, culture, and deep emotion. For more than a century, the derby has been the cornerstone of Indian football and one of the biggest competitions in Asia.</span>
+            <p>Here's the full match report published in Footytimes</p>
+            <div class="mt-3">
+                <a href="https://footytimes.com/kolkata-derby-2025-how-mohun-bagan-edged-past-east-bengal/" class="btn btn-primary">Click to read</a>
+            </div>
+        </div>
+        
+        <!-- Right side image -->
+        <div class="col-md-6 text-right">
+            <img src="https://i0.wp.com/footytimes.com/wp-content/uploads/2025/01/Picture10.png?resize=601%2C345&ssl=1" class="img-fluid" alt="Blog Cover">
+        </div>
+    </div>
+</div>
+
+
+<h4 class="mt-5">⚽Example 2 (ISL Match- East Bengal vs Kerala Blasters)</h4>
+<p class="mt-3">
+    Here is an example of a detailed match report that showcases performance analysis, key tactical breakdowns, and statistical insights of an ISL Match East Bengal vs Kerala Blasters FC:
+</p>
+<ul class="mt-3">
+    <li><strong>Team Performance:</strong> A breakdown of overall team performance, including possession stats, passing accuracy, and defensive strategies.</li>
+    <li><strong>Tactical Approaches:</strong> A review of the tactics used by both teams, including formation analysis and strategic decisions.</li>
+    <li><strong>Key Moments:</strong> Highlighting significant moments in the match such as goals, assists, and key defensive plays.</li>
+    <li><strong>Statistical Breakdown:</strong> A detailed look at advanced statistics like expected goals (xG), player performance metrics, and other key figures.</li>
+</ul>
+
+<h5 class="mt-5">Match Report Presentation</h5>
+<div id="matchReportCarousel2" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="PPTs/ex2/sl1.png" class="d-block w-100" alt="Slide 1">
+        </div>
+        <div class="carousel-item">
+            <img src="PPTs/ex2/sl2.png" class="d-block w-100" alt="Slide 2">
+        </div>
+        <div class="carousel-item">
+            <img src="PPTs/ex2/sl3.png" class="d-block w-100" alt="Slide 3">
+        </div>
+        <div class="carousel-item">
+            <img src="PPTs/ex2/sl4.png" class="d-block w-100" alt="Slide 4">
+        </div>
+        <div class="carousel-item">
+            <img src="PPTs/ex2/sl5.png" class="d-block w-100" alt="Slide 5">
+        </div>
+        <div class="carousel-item">
+            <img src="PPTs/ex2/sl6.png" class="d-block w-100" alt="Slide 6">
+        </div>
+        <div class="carousel-item">
+            <img src="PPTs/ex2/sl7.png" class="d-block w-100" alt="Slide 7">
+        </div>
+        <div class="carousel-item">
+            <img src="PPTs/ex2/sl8.png" class="d-block w-100" alt="Slide 8">
+        </div>
+        <div class="carousel-item">
+            <img src="PPTs/ex2/sl9.png" class="d-block w-100" alt="Slide 9">
+        </div>
+        <div class="carousel-item">
+            <img src="PPTs/ex2/sl10.png" class="d-block w-100" alt="Slide 10">
+        </div>
+        <div class="carousel-item">
+            <img src="PPTs/ex2/sl11.png" class="d-block w-100" alt="Slide 11">
+        </div>
+        <div class="carousel-item">
+            <img src="PPTs/ex2/sl12.png" class="d-block w-100" alt="Slide 12">
+        </div>
+        <div class="carousel-item">
+            <img src="PPTs/ex2/sl13.png" class="d-block w-100" alt="Slide 13">
+        </div>
+    </div>
+
+    <!-- Navigation buttons placed below the carousel -->
+    <div class="carousel-controls d-flex justify-content-between mt-3 mb-4">
+        <button class="carousel-control-prev" type="button" data-bs-target="#matchReportCarousel2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#matchReportCarousel2" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden"></span>
+        </button>
+    </div>
+</div>
+
+<!-- Full Match Report Section - placed below carousel and navigation buttons -->
+<div class="mt-5">
+    <h5 class="text-left mb-4">Full Match Report</h5>
+    <div class="row">
+        <!-- Left side text and button -->
+        <div class="col-md-6">
+            <h6>East Bengal Triumphs Over Kerala Blasters</h6>
+            <span>East Bengal FC secured a crucial 2-1 victory against Kerala Blasters FC in the Indian Super League (ISL) 2024-25 season at the Vivekananda Yuba Bharati Krirangan in Kolkata. The win marked a vital turnaround for the Torch Bearers, who snapped their three-game losing streak and recorded their first victory since December 21.</span>
+            <p>Here's the full match report published in Footytimes</p>
+            <div class="mt-3">
+                <a href="https://footytimes.com/east-bengal-triumphs-over-kerala-blasters/" class="btn btn-primary btn-lg">Click to read</a>
+            </div>
+        </div>
+
+        <!-- Right side image -->
+        <div class="col-md-6 text-right">
+            <img src="https://i0.wp.com/footytimes.com/wp-content/uploads/2025/01/Untitled-design-8.png?resize=750%2C430&ssl=1" class="img-fluid rounded" alt="Blog Cover">
+        </div>
+    </div>
+</div>
+
+
+<div class="container mt-5">
+    <h2>Player Reports</h2>
+
+    <p class="lead">
+        In-depth analysis of individual player performances, including key metrics, tactical roles, strengths, weaknesses, and areas for improvement. These reports are designed to provide insights into a player’s contributions to the team, helping coaches, analysts, and recruiters make informed decisions.
+    </p>
+
+    <p style="font-family: 'Courier New', Courier, monospace;">
+        [For analyzing player performances, I gathered data using Python by scraping information from key football data sources like Opta, focusing on metrics such as passes, goals, assists, key defensive actions, shots on target, and other advanced statistics. I then used Python libraries like Pandas for data manipulation, along with visualization tools like Matplotlib and Mplsoccer, to generate detailed player analysis reports that effectively convey key performance indicators and tactical roles.]
+    </p>
+
+    <h4>⚽Example 1 (Player Report - Luis Guilherme)</h4>
+    <p>
+        Here is an example of a detailed player scouting report for Luis Guilherme, analyzing his performance in season 2023-24:
+    </p>
+    <ul>
+        <li><strong>Player Overview:</strong> An overview of the player’s performance, including position, tactical role, and key statistics from the match.</li>
+        <li><strong>Offensive Contribution:</strong> Analysis of goals, assists, shots, key passes, and overall attacking influence.</li>
+        <li><strong>Defensive Contribution:</strong> Breakdown of defensive actions, interceptions, clearances, and tackles.</li>
+        <li><strong>Key Moments:</strong> Highlighting key moments in the match such as goals, assists, and pivotal actions that influenced the game.</li>
+        <li><strong>Statistical Breakdown:</strong> A detailed look at performance metrics such as expected goals (xG), player movement, and contribution to the team's overall strategy.</li>
+    </ul>
+
+    <h5>Player Report Presentation</h5>
+    <div id="playerReportCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="PPTs/player1/sl1.png" class="d-block w-100" alt="Slide 1">
+            </div>
+            <div class="carousel-item">
+                <img src="PPTs/player1/sl2.png" class="d-block w-100" alt="Slide 2">
+            </div>
+            <div class="carousel-item">
+                <img src="PPTs/player1/sl3.png" class="d-block w-100" alt="Slide 3">
+            </div>
+            <div class="carousel-item">
+                <img src="PPTs/player1/sl4.png" class="d-block w-100" alt="Slide 3">
+            </div>
+            <div class="carousel-item">
+                <img src="PPTs/player1/sl5.png" class="d-block w-100" alt="Slide 3">
+            </div>
+            <div class="carousel-item">
+                <img src="PPTs/player1/sl6.png" class="d-block w-100" alt="Slide 3">
+            </div>
+            <div class="carousel-item">
+                <img src="PPTs/player1/sl7.png" class="d-block w-100" alt="Slide 3">
+            </div>
+            <div class="carousel-item">
+                <img src="PPTs/player1/sl8.png" class="d-block w-100" alt="Slide 3">
+            </div>
+            <div class="carousel-item">
+                <img src="PPTs/player1/sl9.png" class="d-block w-100" alt="Slide 3">
+            </div>
+            <!-- Add more slides as needed -->
+        </div>
+
+        <!-- Navigation buttons placed below the carousel -->
+        <div class="carousel-controls d-flex justify-content-between mt-3">
+            <button class="carousel-control-prev" type="button" data-bs-target="#playerReportCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#playerReportCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden"></span>
+            </button>
+        </div>
+    </div>
+
+
+    <h4 class="mt-5">⚽ More Examples 0f Player Scouting Reports </h4>
+    <p class="mt-3">
+        Check out my blogs on player scouting reports, where I analyze and break down player performance, potential, and tactical fit for various teams. These posts have been published on well-known websites like <Strong>Breaking The Lines</Strong>, <strong>Footytimes</strong> and <strong>Khel Now</strong>, where I dive deep into the statistical and qualitative aspects of players' skills, strengths, and areas for improvement. If you're interested in football talent identification and scouting insights, these articles will provide valuable perspectives.
+    </p>
+
+    <div id="playerReportCarousel2" class="carousel slide" data-bs-ride="carousel">
+        <!-- Carousel Inner -->
+        <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <div class="row">
+                    <!-- Blog Post 1 -->
+                    <div class="col-12 col-md-4 mb-4 blog-post">
+                        <div class="blog-post__image-container">
+                            <img class="lozad blog-post__cover img-fluid" 
+                                 src="https://i0.wp.com/footytimes.com/wp-content/uploads/2025/01/Untitled-design-6.png?resize=750%2C430&ssl=1" 
+                                 alt="Blog 1 Cover" />
+                            <div class="blog-post__overlay">
+                                <a href="https://footytimes.com/why-patrick-dorgu-could-be-a-perfect-fit-for-manchester-united/" 
+                                   target="_blank" 
+                                   rel="noopener noreferrer" 
+                                   class="blog-post__action">Read</a>
+                            </div>
+                        </div>
+                        <h3 class="blog-post__heading">Why Patrick Dorgu Could Be a Perfect Fit for Manchester United</h3>
+                        <p class="blog-post__meta">Patrick Dorgu, the 20-year-old Danish left-back...</p>
+                    </div>
+    
+                    <!-- Blog Post 2 -->
+                    <div class="col-12 col-md-4 mb-4 blog-post">
+                        <div class="blog-post__image-container">
+                            <img class="lozad blog-post__cover img-fluid" 
+                                 src="https://i0.wp.com/footytimes.com/wp-content/uploads/2025/01/Amad-Diallo.png?resize=750%2C430&ssl=1" 
+                                 alt="Blog 2 Cover" />
+                            <div class="blog-post__overlay">
+                                <a href="https://footytimes.com/amad-diallo-manchester-uniteds-rising-star-strengths-stats-future/" 
+                                   target="_blank" 
+                                   rel="noopener noreferrer" 
+                                   class="blog-post__action">Read</a>
+                            </div>
+                        </div>
+                        <h3 class="blog-post__heading">Amad Diallo: Manchester United’s Rising Star</h3>
+                        <p class="blog-post__meta">From Atalanta's youth academy to Manchester United's top players...</p>
+                    </div>
+    
+                    <!-- Blog Post 3 -->
+                    <div class="col-12 col-md-4 mb-4 blog-post">
+                        <div class="blog-post__image-container">
+                            <img class="lozad blog-post__cover img-fluid" 
+                                 src="https://i0.wp.com/footytimes.com/wp-content/uploads/2025/01/Richard-Celis.png?resize=750%2C430&ssl=1" 
+                                 alt="Blog 3 Cover" />
+                            <div class="blog-post__overlay">
+                                <a href="https://footytimes.com/richard-celis-east-bengals-new-venezuelan-spearhead/" 
+                                   target="_blank" 
+                                   rel="noopener noreferrer" 
+                                   class="blog-post__action">Read</a>
+                            </div>
+                        </div>
+                        <h3 class="blog-post__heading">Richard Celis: East Bengal’s New spearhead</h3>
+                        <p class="blog-post__meta">28-year-old Venezuela international Richard Enrique Celis Sanchez has joined East Bengal FC...</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <div class="row">
+                    <!-- Blog Post 4 -->
+                    <div class="col-12 col-md-4 mb-4 blog-post">
+                        <div class="blog-post__image-container">
+                            <img class="lozad blog-post__cover img-fluid" 
+                                 src="https://assets.khelnow.com/news/uploads/2023/11/0_GettyImages-1760547476.jpg" 
+                                 alt="Blog 4 Cover" />
+                            <div class="blog-post__overlay">
+                                <a href="https://khelnow.com/football/2023-11-world-football-finley-gorman-profile-scouting-report" 
+                                   target="_blank" 
+                                   rel="noopener noreferrer" 
+                                   class="blog-post__action">Read</a>
+                            </div>
+                        </div>
+                        <h3 class="blog-post__heading">Finley Gorman: Profile, playing style, scouting report</h3>
+                        <p class="blog-post__meta">A 15-year-old attacking midfielder currently making waves at Leeds United...</p>
+                    </div>
+    
+                    <!-- Blog Post 5 -->
+                    <div class="col-12 col-md-4 mb-4 blog-post">
+                        <div class="blog-post__image-container">
+                            <img class="lozad blog-post__cover img-fluid" 
+                                 src="https://assets.khelnow.com/news/uploads/2024/01/Screenshot-2024-01-09-161846-1.png" 
+                                 alt="Blog 5 Cover" />
+                            <div class="blog-post__overlay">
+                                <a href="https://khelnow.com/football/2024-01-world-football-lamine-camara-profile-scouting-report" 
+                                   target="_blank" 
+                                   rel="noopener noreferrer" 
+                                   class="blog-post__action">Read</a>
+                            </div>
+                        </div>
+                        <h3 class="blog-post__heading">Lamine Camara: Profile, playing style, scouting report</h3>
+                        <p class="blog-post__meta">Lamine Camara hails from Diouloulou and has rapidly risen through the ranks to become a key player...</p>
+                    </div>
+    
+                    <!-- Blog Post 6 -->
+                    <div class="col-12 col-md-4 mb-4 blog-post">
+                        <div class="blog-post__image-container">
+                            <img class="lozad blog-post__cover img-fluid" 
+                                 src="https://footytimes.com/wp-content/uploads/2025/01/Add-a-heading.png" 
+                                 alt="Blog 6 Cover" />
+                            <div class="blog-post__overlay">
+                                <a href="https://sportskeeda.com/football/10-young-stars-expected-to-shine-in-2024" 
+                                   target="_blank" 
+                                   rel="noopener noreferrer" 
+                                   class="blog-post__action">Read</a>
+                            </div>
+                        </div>
+                        <h3 class="blog-post__heading">Anthony Gordon: Redefining Newcastle and England’s Attack</h3>
+                        <p class="blog-post__meta">At just 23, Anthony Gordon has become a vital player for Newcastle and England...</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <div class="row">
+                    <!-- Blog Post 7 -->
+                    <div class="col-12 col-md-4 mb-4 blog-post">
+                        <div class="blog-post__image-container">
+                            <img class="lozad blog-post__cover img-fluid" 
+                                 src="https://assets.khelnow.com/news/uploads/2023/11/F_Y3CS-XgAAQiqv.jpg" 
+                                 alt="Blog 7 Cover" />
+                            <div class="blog-post__overlay">
+                                <a href="https://khelnow.com/football/2023-11-world-football-estevao-willian-profile-scouting-report" 
+                                   target="_blank" 
+                                   rel="noopener noreferrer" 
+                                   class="blog-post__action">Read</a>
+                            </div>
+                        </div>
+                        <h3 class="blog-post__heading">Estevão Willian: Profile, playing style, scouting report</h3>
+                        <p class="blog-post__meta">Estevão Willian’s football journey began in 2017 when he joined the youth academy of Cruzeiro...</p>
+                    </div>
+    
+                    <!-- Blog Post 8 -->
+                    <div class="col-12 col-md-4 mb-4 blog-post">
+                        <div class="blog-post__image-container">
+                            <img class="lozad blog-post__cover img-fluid" 
+                                 src="https://assets.khelnow.com/news/uploads/2023/10/Screenshot-2023-10-23-185939.png" 
+                                 alt="Blog 8 Cover" />
+                            <div class="blog-post__overlay">
+                                <a href="https://khelnow.com/football/2023-10-world-football-marc-guiu-profile-scouting-report" 
+                                   target="_blank" 
+                                   rel="noopener noreferrer" 
+                                   class="blog-post__action">Read</a>
+                            </div>
+                        </div>
+                        <h3 class="blog-post__heading">Marc Guiu: Profile, playing style, scouting report</h3>
+                        <p class="blog-post__meta">Standing at a towering 6'2", Guiu cuts an imposing figure on the pitch...</p>
+                    </div>
+    
+                    <!-- Blog Post 9 -->
+                    <div class="col-12 col-md-4 mb-4 blog-post">
+                        <div class="blog-post__image-container">
+                            <img class="lozad blog-post__cover img-fluid" 
+                                 src="https://assets.khelnow.com/news/uploads/2023/10/Steven-Gerard-Gaote.jpeg" 
+                                 alt="Blog 9 Cover" />
+                            <div class="blog-post__overlay">
+                                <a href="https://khelnow.com/football/2023-10-world-football-steven-gerard-gaote-profile-playing-style-scouting-report" 
+                                   target="_blank" 
+                                   rel="noopener noreferrer" 
+                                   class="blog-post__action">Read</a>
+                            </div>
+                        </div>
+                        <h3 class="blog-post__heading">Steven Gerard Gaote: Profile, playing style, scouting report</h3>
+                        <p class="blog-post__meta">Steven Gerard Gaote seems destined for greatness with a name that strikes...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Navigation buttons placed below the carousel -->
+        <div class="carousel-controls d-flex justify-content-between mt-3 mb-4">
+            <button class="carousel-control-prev" type="button" data-bs-target="#playerReportCarousel2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#playerReportCarousel2" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden"></span>
+            </button>
+        </div>
+    </div>
+    
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            
+            <section id="contact" class="section section--contact pt-0">
+                <div class="container">
+                    <div class="contact">
+                        <h2>Get in touch with Jeebak</h2>
+                        <div class="row pt-2">
+                            <img class="lozad img-responsive image-left-overflow" src="PPTs\blogs\jz99.jpg"
+                                alt="Profile Picture" style="width: 30%; height: auto;" />
+            
+                            <div class="col-12 col-lg-5 contact__info">
+                                <h4>Phone Number</h4>
+                                <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter your phone number" required>
+            
+                                <h4>Email</h4>
+                                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            
+                            
+                                <h4>Queries</h4>
+                                <textarea id="queries" name="queries" placeholder="Enter your queries"></textarea>
+            
+                                <br /><br />
+                                <button class="btn btn-primary" onclick="sendMessage()">
+                                    <i class="icon-ml-fill">
+
+                                    </i>
+                                    Send Message
+                                    <img src="PPTs\blogs\—Pngtree—white message icon_4631512.png" alt="Logo" style="width: 10px; height:10x; margin-left: 50px;">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <script>
+                function sendMessage() {
+                   
+                    var phoneNumber = document.getElementById("phoneNumber").value;
+                    var email = document.getElementById("email").value;
+                    var address = document.getElementById("address").value;
+                    var queries = document.getElementById("queries").value;
+            
+                   
+                    console.log("Phone Number: " + phoneNumber);
+                    console.log("Email: " + email);
+                    console.log("Address: " + address);
+                    console.log("Queries: " + queries);
+            
+                    
+                }
+            </script>
+            
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer__left">
+                <div class="footer__copy">
+                    © Jeebak. All rights reserved. 2024
+                </div>
+            </div>
+
+            <div class="footer__links">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">HOME</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a data-scroll class="nav-link" href="#about">ABOUT</a
+        >
+
+                    <li class="nav-item">
+                        <a data-scroll class="nav-link" href="#portfolio"
+                          >PORTFOLIO</a
+                        >
+                      </li>
+
+                      <li class="nav-item">
+                        <a data-scroll class="nav-link" href="#contact"
+                          >CONTACT</a
+                        >
+                      </li>
+
+                </ul>
+            </div>
+
+            <div class="footer__right">
+                <div class="footer__copy">
+                    Site built by Jz with
+
+
+
+
+
+
+                </div>
+
+            </div>
+            <img src="PPTs\blogs\image-removebg-preview (2).png" alt="Logo" style="width: 30px; height: 30px; transform: translateY(-8px) rotate(25deg);">
+
+
+        </div>
+    </footer>
+
+    <script src='https://mattdancho.netlify.app/js/rad-animations.js'></script>
+    <script src='https://mattdancho.netlify.app/js/library/lozad.min.js'></script>
+    <script>
+        window.addEventListener("load", function() {
+            var observer = window.lozad(".lozad", {
+                rootMargin: window.innerHeight / 2 + "px 0px",
+                threshold: 0.01
+            });
+            observer.observe();
+        });
+    </script>
+    <script src=''></script>
+    <script src='https://mattdancho.netlify.app/js/library/bootstrap.min.js'></script>
+    <script src='https://mattdancho.netlify.app/js/sticky-header.js'></script>
+    <script src='https://mattdancho.netlify.app/js/library/smooth-scroll.polyfills.min.js'></script>
+    <script src='https://mattdancho.netlify.app/js/library/fontfaceobserver.js'></script>
+    <script>
+        (function(w) {
+
+            if (w.document.documentElement.className.indexOf("fonts-loaded") > -1) {
+                return;
+            }
+            var fontA = new w.FontFaceObserver("Inter", {
+                weight: 300
+            });
+            var fontB = new w.FontFaceObserver("Inter", {
+                weight: 400
+            });
+            var fontC = new w.FontFaceObserver("Inter", {
+                weight: 500
+            });
+            var fontD = new w.FontFaceObserver("Inter", {
+                weight: 600
+            });
+            var fontE = new w.FontFaceObserver("Inter", {
+                weight: 700
+            });
+            var fontF = new w.FontFaceObserver("Inter", {
+                weight: 900
+            });
+            w.Promise.all([fontA.load(), fontC.load(), fontF.load()]).then(function() {
+                w.document.documentElement.className += " fonts-loaded";
+            });
+        })(this);
+    </script>
+    <script>
+        const scroll = new SmoothScroll('a[href*="#"]');
+        $('a.nav-link').on('click', () => {
+            const navbar = $('.navbar-collapse');
+            if (navbar && navbar.hasClass('show')) {
+                $('.navbar-toggler').click();
+            }
+        })
+    </script>
+
+
+<style>
+    /* Add margin to move navigation buttons below the carousel */
+    .carousel-controls {
+        margin-top: 15px; /* Adjust this value to move buttons further down */
+        position: relative; /* Ensure the buttons stay below the carousel */
+    }
+
+    /* Style the buttons */
+    .carousel-controls button {
+        background-color: rgba(0, 0, 0, 0.7); /* Dark background for visibility */
+        border: none;
+        padding: 10px 20px; /* Add padding for better usability */
+        border-radius: 5px; /* Rounded corners */
+        font-size: 1rem; /* Adjust font size */
+        color: white; /* White text for contrast */
+    }
+
+    .carousel-controls button:hover {
+        background-color: rgba(0, 0, 0, 0.9); /* Darker background on hover */
+        cursor: pointer; /* Pointer cursor on hover */
+    }
+
+    /* Adjust icons inside the buttons */
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        filter: invert(1); /* Make icons white */
+        width: 20px;
+        height: 20px;
+    }
+</style>
+<!-- Bootstrap JS (Include Popper.js as well) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+
+
+
+
+
+
+</body>
+
+</html>
